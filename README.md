@@ -56,6 +56,11 @@ Jamendo was chosen because it provides free access to real music metadata and au
 
 ---
 
+## APK
+A debug APK is included for easy testing:
+- `apk/app.apk`
+
+
 ## Assumptions & Simplifications
 
 - **Android-only Implementation**  
