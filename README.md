@@ -28,6 +28,18 @@ The project is divided into two modules:
 *   **Expect/Actual Mechanism**: Used for the `AudioPlayer` to handle platform-specific audio playback (using `MediaPlayer` on Android).
 *   **Shared ViewModel**: Logic is decoupled from the Android framework, residing in common code.
 
+## Tech Stack
+
+*   **Language**: Kotlin 2.0
+*   **UI**: Compose Multiplatform
+*   **Networking**: Ktor
+*   **Architecture**: MVVM (Shared)
+
+## API Used
+
+**Jamendo Public API**
+Used to fetch real music metadata and audio streams.
+
 ## Running the App
 
 1.  Open the project in Android Studio.
@@ -35,14 +47,7 @@ The project is divided into two modules:
 3.  Select the **`app`** configuration and click Run.
 4.  The Android app behaves exactly as before but runs entirely from the shared codebase.
 
-## iOS Support
+## APK
 
-The iOS target is fully configured in the build system (`iosX64`, `iosArm64`, `iosSimulatorArm64`), satisfying the KMP structure requirement.
-*   **Note**: The iOS implementation of `AudioPlayer` is currently a stub (`AudioPlayer.ios.kt`). The app structure supports adding the iOS UI entry point easily, but it is not required for this intern screening task.
-
-## Tech Stack
-
-*   **Language**: Kotlin 2.0
-*   **UI**: Compose Multiplatform
-*   **Networking**: Ktor
-*   **Architecture**: MVVM (Shared)
+A fresh debug APK is available for testing:
+*   `apk/music-player-debug.apk` 
