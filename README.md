@@ -40,6 +40,11 @@ The project is divided into two modules:
 **Jamendo Public API**
 Used to fetch real music metadata and audio streams.
 
+> Minimum Android SDK: 24+
+
+This architecture allows maximum code sharing and easier future expansion to iOS.
+
+
 ## Running the App
 
 1.  Open the project in Android Studio.
